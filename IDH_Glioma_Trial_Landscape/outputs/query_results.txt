@@ -1,0 +1,102 @@
+
+== Q1: IDH-related trials started per year, with year-over-year change (CTE + LAG)
+ start_year  trials  change_vs_prev_year
+     2012.0       1                  NaN
+     2014.0       6                  5.0
+     2015.0       2                 -4.0
+     2016.0       2                  0.0
+     2017.0       8                  6.0
+     2018.0       5                 -3.0
+     2019.0      12                  7.0
+     2020.0       8                 -4.0
+     2021.0       8                  0.0
+     2022.0       8                  0.0
+     2023.0       8                  0.0
+     2024.0       4                 -4.0
+     2025.0      15                 11.0
+     2026.0      13                 -2.0
+
+== Q2: Sponsor league table among interventional IDH trials (RANK)
+ sponsor_rank                                                      sponsor  trials  live_trials
+            1                                                      Servier       9            6
+            2                                                    NCI / NIH       5            4
+            3                      Assistance Publique - Hôpitaux de Paris       3            1
+            3                                                 Nuvation Bio       3            3
+            5                                     Beijing Tiantan Hospital       2            0
+            5                                               Daiichi Sankyo       2            1
+            5 European Organisation for Research and Treatment of Cance...       2            1
+            5                                             Huashan Hospital       2            1
+            5                                                     Hutchmed       2            1
+            5                                         Katy Peters, MD, PhD       2            1
+            5                                        Rigel Pharmaceuticals       2            2
+            5                           University Health Network, Toronto       2            2
+           13                     Alliance for Clinical Trials in Oncology       1            1
+           13                                                      Celgene       1            0
+           13                                              Duke University       1            0
+
+== Q3: IDH-inhibitor programmes: trials, latest phase and live trials (CTE + RANK)
+ rnk         drug  trials  phase3_trials  live_trials  first_start  latest_start
+   1  Vorasidenib      17              4           14       2015.0        2027.0
+   2  Safusidenib       7              2            5       2017.0        2027.0
+   3   Ivosidenib       5              0            2       2014.0        2021.0
+   4 Olutasidenib       3              0            2       2018.0        2026.0
+   4       IDH305       3              0            1       2015.0        2018.0
+   6     HMPL-306       2              0            1       2021.0        2025.0
+   7    LY3410738       1              0            1       2020.0        2020.0
+   7   Enasidenib       1              0            0       2014.0        2014.0
+
+== Q4: Phase mix of interventional IDH trials
+       phases  trials
+       PHASE2      22
+       PHASE1      18
+       PHASE3       8
+ (not stated)       8
+ EARLY_PHASE1       7
+PHASE1|PHASE2       5
+       PHASE4       1
+
+== Q5: Where are the sites? Countries ranked by number of distinct IDH trials
+ rnk        country  trials  sites
+   1  United States      42    632
+   2         France      20     48
+   2          China      20     40
+   4          Spain      10     36
+   5    Netherlands       9     24
+   5        Germany       9     50
+   5      Australia       9     36
+   8          Italy       8     24
+   9 United Kingdom       7     17
+  10         Canada       6     26
+  11    Switzerland       5     10
+  11          Japan       5     30
+
+== Q6: India footprint (country token must equal 'India', so 'Indiana' is not counted)
+ nct_number                                                  study_title phases study_status                             sponsor  indian_sites
+NCT07755397 First in Human Multicenter Open Name Dose-increase, Conso... PHASE1   RECRUITING Jubilant Therapeutics India Limited             6
+
+== Q7: Vorasidenib / late-stage pipeline detail
+ nct_number        drug        phases           study_status  start_year                                                      sponsor                                                  study_title
+NCT03030066 Safusidenib        PHASE1              COMPLETED      2017.0                                               Daiichi Sankyo Study of DS-1001b in Patients With Gene IDH1-Mutated Gliomas
+NCT04458272 Safusidenib        PHASE2  ACTIVE_NOT_RECRUITING      2020.0                                     Daiichi Sankyo Co., Ltd. A Study of DS-1001b in Patients With Chemotherapy- and Ra...
+NCT05577416 Safusidenib  EARLY_PHASE1              COMPLETED      2022.0                                             Melbourne Health A Study of AB-218 in Patients With IDH1 Mutated Low Grade...
+NCT05303519 Safusidenib        PHASE3             RECRUITING      2023.0                                            Nuvation Bio Inc.        SIGMA (Safusidenib in IDH1 Mutant Glioma Maintenance)
+NCT07712757 Safusidenib        PHASE3     NOT_YET_RECRUITING      2027.0                                            Nuvation Bio Inc. Safety and Efficacy Study of Safusidenib in Participants ...
+NCT07703436 Safusidenib        PHASE2             RECRUITING      2027.0                                            Nuvation Bio Inc. Safety and Efficacy Study of Safusidenib in Participants ...
+NCT07832123 Safusidenib        PHASE2     NOT_YET_RECRUITING      2027.0                                         University of Zurich Safusidenib for Patients With Newly Diagnosed IDH1-mutant...
+NCT05592743 Vorasidenib           NaN APPROVED_FOR_MARKETING         NaN                                                      Servier                          Vorasidenib Expanded Access Program
+NCT07286292 Vorasidenib           NaN             RECRUITING         NaN    Institut de Recherches Internationales Servier (I.R.I.S.) Vorasidenib Study in Pediatric Participants With Grade 2 ...
+NCT02481154 Vorasidenib        PHASE1              COMPLETED      2015.0               Institut de Recherches Internationales Servier Study of Orally Administered AG-881 in Patients With Adva...
+NCT03343197 Vorasidenib        PHASE1              COMPLETED      2018.0               Institut de Recherches Internationales Servier Study of AG-120 and AG-881 in Subjects With Low Grade Glioma
+NCT04164901 Vorasidenib        PHASE3  ACTIVE_NOT_RECRUITING      2020.0               Institut de Recherches Internationales Servier Study of Vorasidenib (AG-881) in Participants With Residu...
+NCT05484622 Vorasidenib        PHASE1  ACTIVE_NOT_RECRUITING      2023.0               Institut de Recherches Internationales Servier Study of Vorasidenib and Pembrolizumab Combination in Rec...
+NCT06780930 Vorasidenib        PHASE3  ACTIVE_NOT_RECRUITING      2024.0                                                      Servier Phase 3 Study of Vorasidenib (S095032/AG-881) in Asian Pa...
+NCT07547163 Vorasidenib           NaN             RECRUITING      2025.0       Fondazione I.R.C.C.S. Istituto Neurologico Carlo Besta Patient Voice in the Treatment of Low-grade Gliomas: Use ...
+NCT06478212 Vorasidenib PHASE1|PHASE2  ACTIVE_NOT_RECRUITING      2025.0               Institut de Recherches Internationales Servier Vorasidenib in Combination With Temozolomide (TMZ) in IDH...
+NCT06969352 Vorasidenib           NaN  ACTIVE_NOT_RECRUITING      2025.0                    Servier (Tianjin) Pharmaceutical Co. LTD. A Multicentre, Retrospective-prospective Real-world Study...
+NCT07240662 Vorasidenib           NaN             RECRUITING      2025.0                                                  iOMEDICO AG     Vorasidenib in CNS WHO Grade 2 IDH-mutant Diffuse Glioma
+NCT05609994 Vorasidenib        PHASE1             RECRUITING      2025.0                                         Katy Peters, MD, PhD ViCToRy: Vorasidenib in Combination With Tumor Specific P...
+NCT07469735 Vorasidenib           NaN     NOT_YET_RECRUITING      2026.0                                             Huashan Hospital  Vorasidenib Guided by AGX PET in Recurrent/Low-grade Glioma
+NCT07629089 Vorasidenib        PHASE1     NOT_YET_RECRUITING      2026.0                                                Megan Mantica VorAsidenib With Lomustine In Patients With rEcurrent IDH...
+NCT07215910 Vorasidenib        PHASE3             RECRUITING      2026.0                     Alliance for Clinical Trials in Oncology Testing Addition of an Anti-cancer Drug, Vorasidenib to T...
+NCT06809322 Vorasidenib        PHASE3             RECRUITING      2026.0 European Organisation for Research and Treatment of Cance...           Vorasidenib Maintenance for IDH Mutant Astrocytoma
+NCT07877415 Vorasidenib        PHASE1     NOT_YET_RECRUITING      2027.0                                        Heidelberg University A Multicenter Safety and Immunogenicity Window-of-opportu...
