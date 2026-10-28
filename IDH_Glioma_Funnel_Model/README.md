@@ -4,6 +4,8 @@
 
 **Tools:** Python (pandas, matplotlib). No confidential or company data is used; every input is from a cited public source or is labelled as a scenario.
 
+**Bottom Line:** In the base case, about 660 identified patients a year fit an INDIGO-type profile (range 148 to 3,822). The number depends mostly on how many patients get IDH testing and on the eligibility share. Neither has a published Indian figure, so treat 660 as illustrative, not as a fact.
+
 ## Summary of results (base case, low-to-high range in brackets)
 
 | Funnel step | Patients per year |
@@ -50,17 +52,16 @@ Every parameter is in `data/assumptions.csv` with its range, evidence type (Sour
 | INDIGO-type window | 45% (30 – 60%) | **Scenario** | Criteria from Mellinghoff et al., *N Engl J Med* 2023; the Indian share is not published |
 | Years on treatment | 2.3 (1.5 – 3.0) | Scenario anchored on a trial result | INDIGO median PFS 27.7 months (NEJM 2023) |
 
+*Ranges come from the lowest and highest published values where available; for scenario rows they are my own judgement.*
+
 Price reference (public): Tata 1mg lists Voranigo 40 mg, 30 tablets, MRP ₹18,60,000 and selling price ₹17,67,000 (accessed 27 Oct 2026). Price is not part of the funnel. `outputs/price_uptake_grid.csv` shows an illustrative grid of monthly price × uptake on the base steady-state pool and uses generic prices, not any real programme or negotiated price.
 
 ## Weakest parts of the method (read these before quoting any number)
-1. **Testing rate and INDIGO-window share are assumptions, not data.** They are also the two biggest drivers, so the headline depends on them.
-2. **Hospital series are not population-based.** The glioma and grade shares come from tertiary-centre surgical series in South and North-West India, which over-represent patients who reach surgery and include benign tumours.
-3. **GLOBOCAN counts malignant tumours only.** Applying hospital-series shares needs a conversion (done through the malignant share in the Jaipur series), which adds error. Registries may also code some grade 2 tumours differently.
-4. **The two series disagree.** For example, oligodendroglioma is 0.4% of cases in one and 6.9% in the other, and the grade 2 share ranges from 27% to 43% depending on the denominator.
-5. **The IDH-mutation rate comes from one centre.** The subgroups are small (8 grade 2 oligodendrogliomas).
-6. **Time on therapy is proxied by median PFS,** which is not the same as treatment duration.
-7. **No treated-patient or uptake data.** The model stops at identified, eligible patients and does not estimate how many receive treatment.
-8. **GLOBOCAN is an estimate and the year label should be rechecked** before publication.
+1. Testing rate and eligibility share are assumptions, and they are the two biggest drivers.
+2. Hospital series are not population-based.
+3. The two series disagree.
+4. The IDH-mutation rate comes from one centre.
+5. There is no uptake or treated-patient data.
 
 ## Access-gap view
 `access_gap.py` classifies 37 centres from the public-evidence file: Tier A (neurosurgery and molecular pathology both publicly confirmed), B (one), C (neither). "Not confirmed" means no adequate official source was found, not that the service is absent. A listed molecular pathology service does not prove IDH assays are done on site. The source file's Read Me says 35 centres but the sheet contains 37; this analysis uses all 37.
