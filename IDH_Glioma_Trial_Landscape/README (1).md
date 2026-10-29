@@ -25,7 +25,7 @@
 5. Group sponsor-name variants (for example four Servier names) into one organisation.
 6. Run seven SQL queries (`sql/queries.sql`) and chart the results.
 
-## Weakest parts of the method
+## Limitations and Caveats
 1. **The dataset is search-defined, not exhaustive.** It comes from two registry searches. Trials that mention neither glioma nor a listed drug in the searched fields would be missed, and so would new agents not on my drug list.
 2. **ClinicalTrials.gov only.** Indian studies are often registered only on CTRI, and some Chinese studies only on local registries, so India's footprint is probably understated.
 3. **Keyword flags are approximate.** The IDH-related flag includes summary text, and drug matching depends on name aliases. A few trials could be mis-flagged and I did not review every record by hand.
